@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --cor-principal: #828282;
+  --cor-destaque: #3F3D56;
+  --cor-destaque-alternativo: #EE24FF;
+  --cor-linha: #ECEFF2;
+  --sombra: rgba(0, 0, 0, 0.25);
+}
+
+.destaque{
+  color: var(--cor-destaque);
+}
+
+.negrito{
+  font-weight: bold;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;  
+  color: var(--cor-principal);
+  text-align: center;
+  font-size: 15px;
+}
+
+main{  
+  max-width: 626px;
+  min-height: 486px;
+  margin: 64px auto;
+}
+
+main h1{
+  font-family: 'Dosis', sans-serif;
+  text-shadow: 0px 4px 4px 0px var(--sombra); 
+  font-size: 32px;
+  font-weight: 500;  
+  margin: 32px 0px 16px;
+}
+
+main h1 span{
+  color: var(--cor-destaque-alternativo);
+  font-weight: bolder;
+}
+
+main p{
+  padding: 0px 43px;
+  margin: auto;
+}
+
+main p + p{
+  margin-top: 32px;
+}
+
+hr{
+  max-width: 390px;
+  height: 0px;
+  margin: auto;
+  border: 1px solid var(--cor-linha);
+}
+
+footer{
+  margin-top: 16px;
+  height: 176px;
+  background: url(./assets/wave.png) bottom no-repeat;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer a + a{
+  margin-left: 42px;
+}
